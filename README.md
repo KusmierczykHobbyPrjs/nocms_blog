@@ -1,6 +1,6 @@
 # NoCMS blog
 
-*NoCMS blog* is a web-content previewing tool. It displays a list of files and folders stored in [entries](entries) directory -- no DB is used and no separate managing tools (besides one provided by your website host) are provided. To add a new entry simply create a new [HTML](https://en.wikipedia.org/wiki/HTML) or [MD](https://en.wikipedia.org/wiki/Markdown) file directly in the directory or in a sub-folder. Labels (tags) and date information are parsed from files/folders names. For example test it [here](https://https://students.mimuw.edu.pl/~tk290810/blog/?alllabels=1&labels=ML) or [here](https://https://students.mimuw.edu.pl/~tk290810/memes/).
+*NoCMS blog* is a web-content previewing tool. It displays a list of files and folders stored in [entries](entries) directory -- no DB is used and no separate management tools (besides one provided by your website host) are provided. To add a new entry simply create a new [HTML](https://en.wikipedia.org/wiki/HTML) or [MD](https://en.wikipedia.org/wiki/Markdown) file directly in the directory or in a sub-folder. Labels (tags) and date information are parsed from files/folders names. For example test it [here](https://https://students.mimuw.edu.pl/~tk290810/blog_template/), [here](https://https://students.mimuw.edu.pl/~tk290810/memes/) or [here](https://https://students.mimuw.edu.pl/~tk290810/blog/?alllabels=1&labels=ML).
 
 ## Features
 
