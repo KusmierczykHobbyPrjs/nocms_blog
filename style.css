@@ -1,0 +1,339 @@
+body {
+    margin: auto;
+    margin-top: 150px;
+    padding: 15px;
+
+    max-width: 920px;
+    
+    text-align: justify;
+    font-family: "Sans-serif", Verdana, serif;
+    font-size: medium;
+
+    background-color: #fafafa;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 920px 140px;
+    background-position: center top;
+}
+
+a {
+    text-decoration: none ;
+    color: #404040;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    /* vertical-align: middle; 
+    max-width: 100%;
+    max-height: 100%;*/
+}
+
+ul li{
+    list-style-type: circle;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1 {
+    font-size: large;
+    text-align: center;
+}
+
+h2 {
+    font-size: large;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+article {
+    margin: 0px;
+    /*border: 2px solid black;*/
+}
+
+.entry {
+    display: block;
+
+    padding: 15px;
+    color: #101010;
+    border: 2px solid #fafafa;
+    overflow: auto;
+}
+
+.entry:hover {
+    border-radius: 15px;
+    border: 2px solid #dedede;
+}
+
+.entryIcon {
+    float:left; 
+ 
+    max-height: 150px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    -webkit-filter: grayscale(25%);
+    filter: grayscale(25%);    
+}
+
+.entryImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+.entryHeader {
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+}
+
+.entryDate {
+    display: inline;    
+
+    font-size: large;
+    color: black;
+    padding: 5px;
+}
+
+.entryDate:hover {
+    text-decoration: none;
+}
+
+.entryLink {
+    display: inline;
+
+    font-size: large;
+    padding: 5px;
+}
+
+.label {
+    display: inline;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 1px 0px 1px;
+    /*min-width: 50px; */
+
+    font-size: medium;
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: gray;
+}
+
+.label:hover {
+    text-decoration: none;
+    /* background-color: #efefef; */
+}
+
+.entryLabel {
+    float: right;
+}
+
+.labelNav {    
+    border-radius: 5px;
+    color: gray;
+}
+
+.labelNav:hover {
+    color: white;
+}
+
+.labelNavEnableAll {
+    /* float: left; */
+    background-color: #efefef;
+    border-color: #efefef;   
+    border: 0px;
+    margin: 0px;        
+    padding: 0px;          
+    color: gray;
+    font-weight: bold;     
+    min-width: 25px;    
+    display: inline-block;
+    text-align: center;    
+}
+
+.labelNavEnableAll:before {
+    content: "+";
+}
+
+.labelNavDisableAll {
+    background-color: #efefef;
+    border-color: #efefef;
+    border: 0px;   
+    margin: 0px;   
+    padding: 0px;              
+    color: gray;
+    font-weight: bold;    
+    min-width: 25px;    
+    display: inline-block;
+    text-align: center;    
+}
+
+.labelNavDisableAll:before {
+    content: "x";    
+}
+
+.labelNavMatchAny {
+    background-color: #efefef;
+    border-color: #efefef;
+    border: 0px;          
+    margin: 0px; 
+    padding: 0px;                    
+    color: gray;       
+    font-weight: bold; 
+    margin-right: 10px;
+    min-width: 50px;        
+    display: inline-block;
+    text-align: center;    
+}
+
+.labelNavMatchAll {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    border: 0px;       
+    margin: 0px;          
+    padding: 0px;              
+    color: white;   
+    font-weight: bold;
+    margin-right: 10px;
+    min-width: 50px;
+    display: inline-block;
+    text-align: center;    
+}
+
+.labelNavMatchAny:before {
+    content: "any";
+}
+
+.labelNavMatchAll:before {
+    content: "all";
+}
+
+.readmoreLink {
+    color: gray;
+}
+
+
+.pageLink {
+    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+
+    padding: 0px 5px 0px 5px;
+    margin: 0px 0px 0px 2px;
+
+    font-size: medium;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.pageLink:hover {
+    text-decoration: none;
+}
+
+.pageLinkDisabled {
+    color: black;    
+    background-color: #efefef;    
+    min-width: 50px;
+}
+
+.pageLinkDisabled:hover {
+    background-color: gray;
+    color: white;    
+    font-weight: bold;
+}
+
+.pageLinkDisabled:before {
+    content: " ";
+}
+
+.pageLinkDisabled:after {
+    content: " ";
+}
+
+.pageLinkEnabled {
+    color: white;    
+    font-weight: bold;
+    background-color: gray;    
+    min-width: 50px; 
+}
+
+.pageLinkEnabled:before {
+    content: " ";
+}
+
+.pageLinkEnabled:after {
+    content: " ";
+}
+
+.pageLinkPrev {
+    color: black;    
+    background-color: #efefef;    
+    min-width: 50px; 
+    /*margin-right: 10px;*/
+}
+
+.pageLinkNext {
+    color: black;    
+    background-color: #efefef;    
+    min-width: 50px; 
+    /*margin-left: 10px;*/
+}
+
+.pageLinkPrev:hover {
+    color: white;    
+    font-weight: bold;
+    background-color: gray;    
+    min-width: 50px; 
+}
+
+.pageLinkNext:hover {
+    color: white;    
+    font-weight: bold;
+    background-color: gray;    
+    min-width: 50px; 
+}
+
+.pageLinkNext:before {
+    content: ">>";
+}
+
+.pageLinkPrev:before {
+    content: "<<";
+}
+
+nav {
+    overflow: auto;
+    padding: 2px 2px 2px 25px;
+    line-height: 170%;
+    /*margin: 2px 0px 0px 15px;    
+    border: 0px;*/
+    /*border: 2px solid black; */
+    /* background-color: #efefef; */
+    text-align: left;
+}
+
+footer {
+    overflow: auto;
+    padding: 2px 15px 0px 15px;
+    /* padding: 2px;
+    border: 0px;
+     background-color: #efefef; */
+    text-align: center;
+}
+
+.returnBtn {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #3498DB;
+}
+
+.returnBtn:before {
+    content: "[MAIN]";
+}
+
+
