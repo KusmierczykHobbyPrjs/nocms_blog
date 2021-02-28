@@ -242,7 +242,7 @@ function parse_labels($entry) {
     foreach ($labels as &$label) {
         $label = str_replace("[", "", $label);
         $label = str_replace("]", "", $label);
-        $label = str_replace(" ", "_", $label);
+        //$label = str_replace(" ", "_", $label);
     }
     if (count($labels)<=0) { # no labels
         $labels = array($EMPTY_LABEL);
