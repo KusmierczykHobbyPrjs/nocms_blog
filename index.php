@@ -76,6 +76,7 @@ $ENTRY_FORMAT = "
 
 $TITLE_REPLACE = ['_' => ' ', '.html' => '', '.php' => '', '.md' => '']; # parsing of file names to get entry titles
 $ABSTRACT_READ_MORE_TEXT = "(read&nbsp;more)";
+$ABSTRACT_HREF = "show.php?path=@url";
 
 $SHOW_LABELS_PANEL = true;
 $EMPTY_LABEL = "?";
@@ -145,10 +146,7 @@ if ($SHOW_LABELS_PANEL) {
 echo("<article>\n");
 echo($HEADER."\n");
 foreach ($entries as $entry) {
-    # add prefix @ to each field
-    $mapping = array();
-    foreach ($entry as $entry_key => $entry_value) $mapping['@'.$entry_key]=$entry_value; 
-    echo(strtr($ENTRY_FORMAT, $mapping));
+    echo(format_fields($ENTRY_FORMAT, $entry)); 
 }
 echo("</article>\n");
 #------------------------------------------
@@ -305,10 +303,11 @@ function retrieve_icon_html($entry) {
 function retrieve_abstract_html($entry) {
     /** Returns abstract_html if available for an entry. */
     global $ABSTRACT_READ_MORE_TEXT;
+    global $ABSTRACT_HREF;
     $abstract = $entry["path"]."/abstract.html";
     if (file_exists($abstract)) {
         $abstract_text = file_get_contents($abstract);
-        return "$abstract_text\n <a href='show.php?path=".$entry["path"]."' class='readmoreLink'>$ABSTRACT_READ_MORE_TEXT</a> <br />\n";
+        return "$abstract_text\n <a href='".format_fields($ABSTRACT_HREF, $entry)."' class='readmoreLink'>$ABSTRACT_READ_MORE_TEXT</a> <br />\n";
     }
     return "";
 }
@@ -366,6 +365,14 @@ function label_nav_html($label, &$enabled_labels) {
 ###############################################################################
 ###############################################################################
 # Auxiliary:
+
+
+function format_fields($format, $fields) {
+    # add prefix @ to each field
+    $mapping = array();
+    foreach ($fields as $field_key => $field_value) $mapping['@'.$field_key]=$field_value; 
+    return strtr($format, $mapping);
+}
 
 
 function get(&$var, $default=null) {
