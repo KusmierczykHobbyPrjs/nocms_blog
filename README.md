@@ -1,6 +1,6 @@
 # NoCMS blog
 
-*NoCMS blog* is a web-content previewing tool. It displays a list of files and folders stored in [entries](entries) directory -- no DB is used and no separate management tools (besides one provided by your website host) are provided. To add a new entry simply create a new [HTML](https://en.wikipedia.org/wiki/HTML) or [MD](https://en.wikipedia.org/wiki/Markdown) file directly in the directory or in a sub-folder. Labels (tags) and date information are parsed from files/folders names. For example test it [here](https://students.mimuw.edu.pl/~tk290810/blog_template/), [here](https://students.mimuw.edu.pl/~tk290810/memes/) or [here](https://students.mimuw.edu.pl/~tk290810/blog/?alllabels=1&labels=ML).
+*NoCMS blog* is a web-content previewing tool (aka on-line log). It displays a list of files and folders stored in [entries](entries) directory -- no DB is used and no separate management tools (besides one provided by your website host) are provided. To add a new entry simply create a new [HTML](https://en.wikipedia.org/wiki/HTML) or [MD](https://en.wikipedia.org/wiki/Markdown) file directly in the directory or in a sub-folder. Labels (tags) and date information are parsed from files/folders names. For example test it [here](https://students.mimuw.edu.pl/~tk290810/blog_template/), [here](https://students.mimuw.edu.pl/~tk290810/memes/) or [here](https://students.mimuw.edu.pl/~tk290810/blog/?alllabels=1&labels=ML).
 
 ## Features
 
@@ -25,9 +25,10 @@ Look and feel can be configured by editing [style.css](style.css) (and respectiv
 
  * [entries/](entries) - source directory where the entries are stored (see [samples](entries))
  * [index.php](index.php) - the main file enumerating entries
+ * [config.php](config.php) - configuration of filtering, parsing and rendering
+ * [style.css](style.css) - CSS feel-and-look specification
+ * [actions.js](actions.js) - JavasSript code used to adjust logo position and size (for small displays)
  * [show.php](show.php) - displays entries (invoked from `ENTRY_FORMAT` in [index.php](index.php) -- optional)
  * [template_entry_index.html](template_entry_index.html) - HTML template used to render content stored in folders
  * [template_entry_standalone.html](template_entry_standalone.html) - HTML template used to render standalone content
- * [style.css](style.css) - CSS feel-and-look specification
- * [actions.js](actions.js) - JavasSript code used to adjust logo position for small displays
  * [logo.png](logo.png) - default logo

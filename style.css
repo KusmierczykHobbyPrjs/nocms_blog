@@ -12,7 +12,7 @@ body {
     background-color: #fafafa;
     background-image: url("logo.png");
     background-repeat: no-repeat;
-    background-size: 920px 140px;
+    background-size: contain;
     background-position: center top;
 }
 
@@ -274,6 +274,7 @@ article {
     background-color: #efefef;    
     min-width: 50px; 
     /*margin-right: 10px;*/
+    margin: 5px;
 }
 
 .pageLinkNext {
@@ -281,6 +282,7 @@ article {
     background-color: #efefef;    
     min-width: 50px; 
     /*margin-left: 10px;*/
+    margin: 5px;
 }
 
 .pageLinkPrev:hover {
